@@ -1,0 +1,53 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 0.2fr 0.6fr 0.2fr;
+    grid-template-columns: 0.3fr 0.7fr ;
+    background-color: black;
+    color: whitesmoke;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer"
+
+    ;
+}
+
+#header {
+    border: solid 1px wheat;
+    grid-area:header ;
+}
+#aside{
+    border: solid 1px wheat;
+    grid-area: aside;
+}
+#main{
+    display: flex;
+    border: solid 1px wheat;
+    grid-area: main;
+    flex-direction: column;
+}
+#footer{
+    border: solid 1px wheat;
+    grid-area: footer;
+}
+
+.artigos{
+
+    background-color: blue;
+    padding: 5px;
+    flex-grow: 1;
+    display: flex;
+    gap: 5px;
+
+}
+
+
+article {
+    display: flex;
+    background-color: gray;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
